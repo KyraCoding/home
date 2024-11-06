@@ -4,16 +4,20 @@
   "description": "KyraCoding's personal website",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrMeCoding/home.git"
+    "url": "git+https://github.com/KyraCoding/home.git"
   },
   "author": "KyraCoding",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MrMeCoding/home/issues"
+    "url": "https://github.com/KyraCoding/home/issues"
   },
-  "homepage": "https://github.com/MrMeCoding/home#readme"
+  "homepage": "https://github.com/KyraCoding/home#readme",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
 }
