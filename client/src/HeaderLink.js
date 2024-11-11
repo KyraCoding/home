@@ -1,5 +1,5 @@
 import React from "react";
-function HeaderLink({ title, highlightColor="bg-azure"}) {
+function HeaderLink({ title, highlightColor = "bg-azure" }) {
     return (
         <a className="group text-md text-white" href="/">
             {title}

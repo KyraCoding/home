@@ -1,20 +1,15 @@
 import React from 'react';
 import HeaderLink from './HeaderLink';
+import HeaderLogo from './HeaderLogo';
 
 function Header() {
     return (
-        <div className="w-full px-6 p-3 bg-zinc-800 shadow-md flex items-center">
-            <div className="flex w-1/4 justify-start gap-6">
-                <HeaderLink title="KyraCod.ing"/>
+        <div className="w-full px-6 p-3 flex items-center justify-between border-b border-gray-600">
+            <div className="flex">
+                <HeaderLogo />
             </div>
-            <div className="flex w-1/2 justify-center gap-6">
-                <HeaderLink title="Link 1"/>
-                <HeaderLink title="Link 2"/>
-                <HeaderLink title="Link 3"/>
-            </div>
-            <div className="flex w-1/4 justify-end gap-6">
-                <HeaderLink title="Sign In" highlightColor='bg-purple-1'/>
-                <HeaderLink title="Sign Up"/>
+            <div className="flex">
+                <HeaderLink title="Login" highlightColor='bg-purple-1'/>
             </div>
         </div>
     )

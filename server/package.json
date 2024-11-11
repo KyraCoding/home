@@ -4,10 +4,9 @@
   "description": "KyraCoding's personal website",
   "main": "index.js",
   "scripts": {
-    "build:tailwind": "npx tailwindcss -i ../client/src/index.css -o ../client/src/App.css",
     "build:react": "cd ../client && npm run build",
     "start:server": "cd ../server && node server.js",
-    "start": "npm run build:tailwind && npm run build:react && npm run start:server"
+    "start": "npm run build:react && npm run start:server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +19,8 @@
   },
   "homepage": "https://github.com/KyraCoding/home#readme",
   "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "node-cron": "^3.0.3",
     "path": "^0.12.7"
