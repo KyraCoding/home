@@ -2,8 +2,8 @@ import React from 'react';
 
 function SidebarDivider({title}) {
     return (
-        <div className="flex bg-black justify-center p-4">
-            <div className="flex text-white text-center font-bold text-lg">
+        <div className="flex px-4 py-2">
+            <div className="flex font-bold text-black dark:text-white text-lg">
                 {title}
             </div>
         </div>
