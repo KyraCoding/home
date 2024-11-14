@@ -68,7 +68,7 @@ app.get('/api/status', async (req, res) => {
 })
 
 // Wakey wakey, back to the battle
-cron.schedule('*/10 * * * *', () => {
+cron.schedule('*/14 * * * *', () => {
     fetch(url);
     lastHealthCheck = new Date();
 });

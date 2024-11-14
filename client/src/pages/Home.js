@@ -1,4 +1,15 @@
-export default function Home() {
-    return <h1>Welcome to the Home Page</h1>;
-  }
-  
+import React from 'react';
+import Footer from '../components/footer/Footer';
+
+function Home() {
+    return (
+        <div className='flex-grow flex-row'>
+            
+            <Footer />
+        </div>
+
+
+    );
+}
+
+export default Home;
