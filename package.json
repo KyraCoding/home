@@ -1,0 +1,17 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "npm install --prefix client && npm install --prefix server",
+    "build": "npm run install && npm run build --prefix client && npm run build --prefix server",
+    "start": "npm run start --prefix server"
+  },
+  "keywords": [],
+  "author": "KyraCoding",
+  "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
+  "bugs": {
+    "url": "https://github.com/KyraCoding/home/issues"
+  },
+  "homepage": "https://github.com/KyraCoding/home#readme",
+  "description": "KyraCoding's personal website"
+}

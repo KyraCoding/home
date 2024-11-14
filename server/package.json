@@ -4,16 +4,13 @@
   "description": "KyraCoding's personal website",
   "main": "index.js",
   "scripts": {
-    "build:react": "cd ../client && npm run build",
-    "start:server": "cd ../server && node server.js",
-    "start": "npm run build:react && npm run start:server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KyraCoding/home.git"
   },
   "author": "KyraCoding",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/KyraCoding/home/issues"
   },
