@@ -6,7 +6,7 @@ server/node_modules/
 
 # Ignore build directories
 dist/
-build/
+client/build/
 
 # Ignore environment variable files
 .env
