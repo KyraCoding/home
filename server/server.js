@@ -66,10 +66,25 @@ app.get('/api/status', async (req, res) => {
         })
     }
 })
+app.get('/api/health', async (req, res) => {
+    const formattedDate = lastHealthCheck.toLocaleString('en-US', {
+        month: 'long',
+        day: 'numeric',
+        year: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: true
+    });
+    return res.json({
+        success: true,
+        lastCheck: formattedDate
+    });
+})
 
 // Wakey wakey, back to the battle
-cron.schedule('*/14 * * * *', () => {
-    fetch(url);
+cron.schedule('*/14 * * * *', async () => {
+    await fetch(url);
     lastHealthCheck = new Date();
 });
 
