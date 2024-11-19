@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import pages
 import Home from './pages/Home';
+import About from './pages/About';
 import NotFound from './pages/NotFound';
 import UnderConstruction from './pages/UnderConstruction';
 
@@ -17,15 +18,14 @@ library.add(fas)
 function App() {
   const { isDark } = useDarkMode();
   return (
-    <div className={`flex h-full min-h-screen flex-col ${isDark ? 'dark' : ''}`}>
+    <div className={`flex h-screen flex-col ${isDark ? 'dark' : ''}`}>
       <Header />
-      <div className="flex flex-row grow bg-white/90 dark:bg-black/90">
+      <div className="flex flex-row h-main-content bg-white/90 dark:bg-black/90">
         <Sidebar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<UnderConstruction />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<UnderConstruction />} />
-            <Route path="/aboutme" element={<UnderConstruction />} />
             <Route path="/projects" element={<UnderConstruction />} />
             <Route path="/guestbook" element={<UnderConstruction />} />
             <Route path="/shorten" element={<UnderConstruction />} />

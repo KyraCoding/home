@@ -17,6 +17,10 @@ module.exports = {
         'purple-2': '#BF00FF',
         'pink-1': '#FF00FF',
       },
+      height: {
+        'header-height': '2.75rem',
+        'main-content': 'calc(100vh - 2.75rem)',
+      },
       fontFamily: {
         roboto: ['"Roboto Mono"', "sans-serif"],
       },

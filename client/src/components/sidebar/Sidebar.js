@@ -5,10 +5,10 @@ import SidebarSpacer  from './SidebarSpacer';
 
 function Sidebar() {
     return (
-        <div className="hidden lg:flex px-4 py-2  flex-col h-overflow-auto w-1/5 border-r  border-gray-400 dark:border-gray-600">
+        <div className="hidden lg:flex px-4 py-2 flex-col h-main-content overflow-auto w-1/5 border-r border-gray-400 dark:border-gray-600">
             <SidebarDivider title="Stuff"/>
             <SidebarSegment title="Home" link="/" icon='fa-solid fa-house'/>
-            <SidebarSegment title="About Me" link="/aboutme" icon='fa-solid fa-user'/>
+            <SidebarSegment title="About Me" link="/about" icon='fa-solid fa-user'/>
             <SidebarSegment title="Projects" link="/projects" icon='fa-solid fa-laptop-code'/>
             <SidebarSegment title="Guestbook" link="/guestbook" icon='fa-solid fa-book'/>
             <SidebarSpacer />

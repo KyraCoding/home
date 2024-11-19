@@ -18,7 +18,7 @@ function Home() {
 
             <div className='flex flex-col mt-12 text-gray-700 dark:text-gray-300'>
                 <div className="grid lg:grid-cols-3 gap-4 mt-6">
-                    <Widget title="About Me" description="Learn more about me!" url="/aboutme" />
+                    <Widget title="About Me" description="Learn more about me!" url="/about" />
                     <Widget title="Projects" description="See what I've been up to!" url="/projects" />
                     <Widget title="Guestbook" description="Leave behind a message!" url="/guestbook" />
                     <Widget title="Link Shortener" description="Shorten your links!" url="/shorten" />

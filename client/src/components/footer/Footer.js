@@ -9,7 +9,8 @@ function Footer() {
             <div className="flex flex-col text-gray-600 dark:text-gray-400 text-xs pl-6 p-3">
                 <span className="inline-flex items-center">
                     <FontAwesomeIcon fixedWidth size="xs" className='pr-1' icon={faCopyright}/>
-                    {new Date().getFullYear()} KyraCoding (Kyra) - All rights reserved.
+                    {new Date().getFullYear()} KyraCoding (Kyra) -&nbsp;
+                    <Link title="Licensed under CC BY-NC-ND 4.0" url="https://creativecommons.org/licenses/by-nc-nd/4.0/" underlineThickness='1px'/>.
                     <span className="pl-2 gap-2 flex">
                         <Link title="TOS" url="/tos" underlineThickness='1px' />
                         <Link title="Privacy" url="/privacy" underlineThickness='1px'/>
