@@ -1,4 +1,5 @@
 import React from 'react';
+import {Helmet} from "react-helmet";
 import Footer from '../components/footer/Footer';
 import logo from '../assets/logo512.png';
 import Widget from '../components/general/Widget';
@@ -6,6 +7,9 @@ import Widget from '../components/general/Widget';
 function Home() {
     return (
         <div className='flex w-4/5 flex-col px-8 pt-4 text-black dark:text-white overflow-auto'>
+            <Helmet>
+                <title>Home - KyraCoding</title>
+            </Helmet>
             <div className='flex flex-row h-52 w-full gap-4'>
                 <img src={logo} className="aspect-square h-full" alt="logo" />
                 <div className='flex-col w-full h-full pl-8 py-2'>

@@ -8,12 +8,20 @@
     "start:client": "npm run start --prefix client",
     "start:server": "npm run start --prefix server"
   },
-  "keywords": ["homepage", "personal", "website", "utilities"],
+  "keywords": [
+    "homepage",
+    "personal",
+    "website",
+    "utilities"
+  ],
   "author": "KyraCoding",
   "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
   "bugs": {
     "url": "https://github.com/KyraCoding/home/issues"
   },
   "homepage": "https://github.com/KyraCoding/home#readme",
-  "description": "KyraCoding's personal website"
+  "description": "KyraCoding's personal website",
+  "dependencies": {
+    "react-helmet": "^6.1.0"
+  }
 }
