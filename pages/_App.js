@@ -1,14 +1,13 @@
-import './App.css';
-import Header from './components/header/Header';
-import Sidebar from './components/sidebar/Sidebar';
-import { DarkModeProvider, useDarkMode } from './components/context/DarkModeContext';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import '../styles/App.css';
+import Header from '../components/header/Header';
+import Sidebar from '../components/sidebar/Sidebar';
+import { DarkModeProvider, useDarkMode } from '../components/context/DarkModeContext';
 
 // Import pages
-import Home from './pages/Home';
-import About from './pages/About';
-import NotFound from './pages/NotFound';
-import UnderConstruction from './pages/UnderConstruction';
+import Home from './Home';
+import About from './About';
+import NotFound from './NotFound';
+import UnderConstruction from './UnderConstruction';
 
 // Font Awesome setup
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -47,9 +46,7 @@ function App() {
 export default function AppWrapper() {
   return (
     <DarkModeProvider>
-      <BrowserRouter>
         <App />
-      </BrowserRouter>
     </DarkModeProvider>
   );
 }

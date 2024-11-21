@@ -1,7 +1,7 @@
 import React from 'react';
 import {Helmet} from "react-helmet";
 import Footer from '../components/footer/Footer';
-import logo from '../assets/logo512.png';
+import logo from '../public/logo512.png';
 import Widget from '../components/general/Widget';
 
 function Home() {

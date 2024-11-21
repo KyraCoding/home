@@ -1,27 +1,46 @@
 {
   "name": "home",
   "version": "1.0.0",
-  "scripts": {
-    "install": "npm install --prefix client && npm install --prefix server",
-    "build": "npm run install && npm run build --prefix client",
-    "start": "npm run start --prefix server",
-    "start:client": "npm run start --prefix client",
-    "start:server": "npm run start --prefix server"
-  },
+  "description": "KyraCoding's personal website",
   "keywords": [
     "homepage",
     "personal",
     "website",
     "utilities"
   ],
-  "author": "KyraCoding",
-  "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
+  "homepage": "https://github.com/KyraCoding/home#readme",
   "bugs": {
     "url": "https://github.com/KyraCoding/home/issues"
   },
-  "homepage": "https://github.com/KyraCoding/home#readme",
-  "description": "KyraCoding's personal website",
+  "license": "Attribution-NonCommercial-NoDerivatives 4.0 International",
+  "author": "KyraCoding",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "npx serve@latest ./build"
+  },
   "dependencies": {
-    "react-helmet": "^6.1.0"
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "autoprefixer": "^10.4.20",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "next": "^15.0.3",
+    "node-cron": "^3.0.3",
+    "path": "^0.12.7",
+    "postcss": "^8.4.49",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^6.1.13",
+    "tailwindcss": "^3.4.15",
+    "web-vitals": "^4.2.4"
   }
 }

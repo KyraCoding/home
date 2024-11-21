@@ -1,12 +1,12 @@
 # Ignore node_modules directory
-client/node_modules/
-server/node_modules/
+node_modules/
+
 # Ignore log files
 *.log
 
 # Ignore build directories
 dist/
-client/build/
+build/
 
 # Ignore environment variable files
 .env
@@ -18,3 +18,7 @@ Thumbs.db
 # Ignore IDE-specific files
 .vscode/
 .idea/
+
+# Next.js
+.next
+next-env.d.ts
