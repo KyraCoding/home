@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'selector',
+  darkMode: 'class',
   content: [
-    "./src/**/*.js",
-    "./public/*.html"
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -22,7 +23,7 @@ module.exports = {
         'main-content': 'calc(100vh - 2.75rem)',
       },
       fontFamily: {
-        roboto: ['"Roboto Mono"', "sans-serif"],
+        roboto: ['var(--font-roboto-mono)'],
       },
     },
   },
