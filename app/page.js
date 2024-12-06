@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Footer from '../components/footer/Footer';
-import logo from '../public/logo512.png';
+import logo from '@/styles/public/logo512.png';
 import Widget from '../components/general/Widget';
 
 export default function Home() {
