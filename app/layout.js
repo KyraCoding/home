@@ -19,6 +19,11 @@ config.autoAddCss = false
 import { fas } from '@fortawesome/free-solid-svg-icons'
 library.add(fas)
 
+// Auth
+import { auth } from '@/auth'
+import { AuthProvider } from '@/AuthProvider'
+
+
 export const metadata = {
     title: {
         template: '%s - KyraCoding',
@@ -36,19 +41,22 @@ export const viewport = {
     themeColor: "#007fff",
 }
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+    const session = await auth()
     return (
         <html lang="en" suppressHydrationWarning>
             <body>
-                <ClientTheme>
-                    <div className={`flex h-screen flex-col ${robotoMono.variable} font-roboto`}>
-                        <Header />
-                        <div className="flex flex-row h-main-content bg-white/90 dark:bg-black/90">
-                            <Sidebar />
-                            {children}
+                <AuthProvider session={session}>
+                    <ClientTheme>
+                        <div className={`flex h-screen flex-col ${robotoMono.variable} font-roboto`}>
+                            <Header />
+                            <div className="flex flex-row h-main-content bg-white/90 dark:bg-black/90">
+                                <Sidebar />
+                                {children}
+                            </div>
                         </div>
-                    </div>
-                </ClientTheme>
+                    </ClientTheme>
+                </AuthProvider>
             </body>
         </html>
     )

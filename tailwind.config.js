@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         'light-blue-1': '#00BFFF',
         'azure': '#007FFF',
+        'azure-hover': '#005fbf',
         'blue-1': '#0040FF',
         'blue-2': '#0000FF',
         'blue-3': '#4000FF',

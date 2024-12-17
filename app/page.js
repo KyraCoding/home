@@ -32,7 +32,6 @@ export default function Home() {
                     <Widget title="FileDrop" description="Share files across devices!" url="/filedrop" />
                 </div>
             </div>
-
             <Footer />
         </div>
 

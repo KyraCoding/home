@@ -2,6 +2,7 @@ import React from 'react';
 import SidebarDivider from './SidebarDivider';
 import SidebarSegment from './SidebarSegment';
 import SidebarSpacer  from './SidebarSpacer';
+import SidebarLogin from './SidebarLogin';
 
 function Sidebar() {
     return (
@@ -21,6 +22,7 @@ function Sidebar() {
             <SidebarSegment title="Preferences" link="/settings" icon='fa-solid fa-sliders'/>
             <SidebarSegment title="About This Site" link="/aboutsite" icon='fa-solid fa-circle-question'/>
             <SidebarSegment title="Status" link="/status" icon='fa-solid fa-chart-simple'/>
+            <SidebarLogin/>
         </div>
     )
 }

@@ -88,6 +88,9 @@ async function main() {
     })
 
     // Let nextjs handle routing
+    app.all("/api/*", (req, res) => {
+        return handle(req, res);
+    });
     app.get('*', (req, res) => {
         return handle(req, res);
     });
