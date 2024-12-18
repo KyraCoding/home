@@ -2,10 +2,10 @@ import Construction from '@/components/placeholders/Construction';
 
 
 export const metadata = {
-    title: "Guestbook"
+    title: "Projects"
 }
 
-export default function Guestbook() {
+export default function Projects() {
     return (
         <Construction />
     );

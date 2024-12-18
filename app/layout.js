@@ -1,5 +1,7 @@
+import Script from 'next/script';
+
 import '@/styles/globals.css';
-import ClientTheme from './ClientTheme';
+import ClientTheme from '../components/general/ClientTheme';
 import Header from '@/components/header/Header';
 import Sidebar from '@/components/sidebar/Sidebar';
 
@@ -22,7 +24,6 @@ library.add(fas)
 // Auth
 import { auth } from '@/auth'
 import { AuthProvider } from '@/AuthProvider'
-
 
 export const metadata = {
     title: {
@@ -57,6 +58,7 @@ export default async function RootLayout({ children }) {
                         </div>
                     </ClientTheme>
                 </AuthProvider>
+                <Script src="https://cloud.umami.is/script.js" data-website-id="57ff2864-4bb9-4152-99bd-7f5e7c02befa"/>
             </body>
         </html>
     )

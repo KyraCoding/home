@@ -3,6 +3,7 @@ import Footer from '../components/footer/Footer';
 import logo from '@/public/logo512.png';
 import Widget from '../components/general/Widget';
 
+
 export const metadata = {
     title: "Home - KyraCoding",
 }

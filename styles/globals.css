@@ -1,9 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'nprogress/nprogress.css';
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
+}
+
+#nprogress .bar {
+    background: #007fff !important;
 }
 
 /* Track */
@@ -18,6 +24,7 @@
     background-clip: padding-box;
     border-radius: 5px;
 }
+
 .dark ::-webkit-scrollbar-thumb {
     background: rgb(64 64 64);
     border: 2px solid rgba(0, 0, 0, 0);
